@@ -1,0 +1,121 @@
+.autonym{
+    height: 100%;
+    background: #fff;
+    overflow: auto;
+    padding-bottom: 50px;
+    a:hover{
+        color: #fff !important;
+    }
+    .form{
+        padding: 10px 30px;
+        background: #fff;
+        overflow: auto;
+    }
+    .upimg{
+        display: flex;
+        height: 166px;
+        background: #1890FF;
+        padding: 0 25px;
+        position: relative;
+        .card{
+            .am-flexbox-item{
+                width: 150px;
+                height: 105px;
+                margin: 0;
+                margin-top: 10px;
+            }
+            .am-image-picker-upload-btn::after{
+                height: 0;
+            }
+            .am-image-picker-upload-btn::before{
+                height: 0;
+            }
+            .des{
+                font-size: 12px;
+                color: #fff;
+                margin-top: -40px;
+                text-align: center;
+            }        
+        }
+        .imgz{           
+            .am-image-picker-upload-btn{
+                background: url(../../assets/ic_cardZ.png) center no-repeat;
+                background-size: 100% 100%;
+                border: none;
+                border: 1px dashed #eee;
+            }           
+        }
+        .imgF{
+            .am-image-picker-upload-btn{
+                background: url(../../assets/ic_cardF.png) center no-repeat;
+                background-size: 100% 100%;
+                border: none;
+                border: 1px dashed #eee;
+            }            
+        }
+        .text{
+            position: absolute;
+            left: 30px;
+            bottom: 10px;
+            font-size: 12px;
+            color: #fff;
+        }
+    }
+    .am-list-item.am-input-item{
+        margin-top: 7px;
+        padding-left: 0px;
+    }
+    .am-input-control input{
+        text-align: right;
+    }
+    .canvas{
+        margin-top: 20px;
+        border:1px dashed #999;
+        position: relative;
+        img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 999;
+            background: #fff;
+        }
+        div{
+            background: #e9f2ff !important;
+            position: relative;
+        }
+        div::before{
+            position: absolute;
+            z-index: 1;
+            content: "签名区域";
+            left: 0;
+            right: 0;
+            text-align: center;   
+            line-height: 170px;       
+            font-size: 18px;
+            color: #999;
+        }
+        .shade{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            opacity: 0;
+            z-index: 9999;
+        }
+    }
+    .action{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        .am-button{
+            flex: 1;
+            margin-right: 20px;
+        }
+        .am-button:last-child{
+            margin-right: 0;
+        }
+    }
+}

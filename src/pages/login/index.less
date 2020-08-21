@@ -1,0 +1,72 @@
+.login{
+  height: 100%;
+  background: #fff;
+  .cont{
+    height: calc(100% - 50px) ;
+  }
+  header{
+    width: 100vw;
+    height: 190px;
+    background:url(../../assets/pic_head.png) no-repeat;
+    background-size: 100% 100%;
+  }
+  .form{
+    padding:0 30px;
+    .phone{
+      border-bottom: 1px solid #ddd;
+    }
+    .am-list-item{
+      height: 42px;
+      line-height: 42px;
+      margin-top: 17px;
+    }
+    .am-list-line::after{
+      height: 0px !important;
+    }
+    
+    .code{
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      .am-list-item{
+        flex: 1;
+      }
+      .am-button{
+        font-size: 15px;
+        margin-top: 16px;
+      }
+      .am-button::before{
+        height: 0;
+        width: 0;
+        border: none;
+      }
+      span{
+        color: #1890FF;
+        margin-top: 17px;
+      }
+    }
+    .des{
+      margin-top: 10px;
+      font-size: 11px;
+      color: #999;
+    }
+  }
+  footer{
+    font-size: 11px;
+    color: #999;
+    display: flex;
+    justify-content: center;  
+    .am-checkbox-agree .am-checkbox-agree-label{
+      font-size: 11px;
+      color:#999 ;
+      margin-top: 5px;
+    }
+  }
+}
+@media screen and (max-width:320px){
+   .bot{
+    display: none;
+  }
+}
+  
+
